@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Keerthana Pasupuleti Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background-color:#f4f4f4;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        header h1{
+            margin-bottom:15px;
+        }
+
+        nav a{
+            text-decoration:none;
+        }
+
+        nav button{
+            padding:10px 20px;
+            margin:5px;
+            border:none;
+            border-radius:5px;
+            background:#4CAF50;
+            color:white;
+            cursor:pointer;
+        }
+
+        nav button:hover{
+            background:#45a049;
+        }
+
+        section{
+            max-width:900px;
+            margin:30px auto;
+                        padding:25px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#222;
+            margin-bottom:15px;
+        }
+
+        img{
+            width:220px;
+            height:220px;
+            object-fit:cover;
+            border-radius:50%;
+            margin:15px 0;
+        }
+
+        ol{
+            margin-left:20px;
+        }
+
+        .project{
+            margin-bottom:20px;
+            padding:15px;
+            background:#f8f8f8;
+            border-left:5px solid #4CAF50;
+        }
+
+        form input,
+        form textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .radio-group,
+        .checkbox-group{
+            margin-bottom:15px;
+        }
+
+        .radio-group input,
+        .checkbox-group input{
+            width:auto;
+                    }
+
+        .submit-btn{
+            background:#4CAF50;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .submit-btn:hover{
+            background:#45a049;
+        }
+
+        .social-links a{
+            text-decoration:none;
+            margin-right:20px;
+            padding:10px 15px;
+            background:#4CAF50;
+            color:white;
+            border-radius:5px;
+            font-weight:bold;
+            display:inline-block;
+            margin-top:10px;
+        }
+
+        .social-links a:hover{
+            background:#45a049;
+        }
+
+        footer{
+            text-align:center;
+            background:#222;
+            color:white;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        @media(max-width:600px){
+            img{
+                width:180px;
+                height:180px;
+            }
+
+            nav button{
+                display:block;
+                width:80%;
+                margin:10px auto;
+            }
+                        .social-links a{
+                display:block;
+                margin:10px auto;
+                width:200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+
+        <nav>
+            <a href="#about"><button>About</button></a>
+            <a href="#skills"><button>Skills</button></a>
+            <a href="#projects"><button>Projects</button></a>
+            <a href="#contact"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>Jaya Keerthana Pasupuleti</h2>
+
+            <img src="img1.jpeg" alt="Jaya Keerthana">
+
+            <p>
+                <strong>Aspiring Full Stack Developer | Java, Python, HTML, CSS & JavaScript.</strong>
+            </p>
+
+            <br>
+
+            <p>
+                I am currently pursuing my B.Tech at
+                <strong>Mohan Babu University</strong>.
+            </p>
+
+            <br>
+
+            <p>
+                Passionate about web development and programming,
+                continuously building projects and improving problem-solving skills.
+            </p>
+        </section>
+                <section id="skills">
+            <h2>My Skills</h2>
+
+            <ol>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ol>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>
+                    A responsive personal portfolio website built using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Calculator Application</h3>
+                <p>
+                    A simple calculator developed using HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Student Management System</h3>
+                <p>
+                    A basic project developed using Java for managing student records.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>Feel free to get in touch with me using the form below.</p>
+
+            <br>
+
+            <form action="https://formsubmit.co/pasupuletijayakeerthanareddy@gmail.com" method="POST">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+
+                <input type="hidden" name="_next" value="https://formsubmit.co/thanks">
+                                <label>Name:</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+
+                <div class="radio-group">
+                    <label>Gender:</label><br><br>
+
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+
+                <div class="checkbox-group">
+                    <label>Interests:</label><br><br>
+
+                    <input type="checkbox" name="interest" value="coding"> Coding
+                    <input type="checkbox" name="interest" value="reading"> Reading
+                </div>
+
+                <label>Bio:</label>
+                <textarea name="bio" rows="5" placeholder="Tell me about yourself"></textarea>
+
+                <button class="submit-btn" type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+            <br>
+
+            <div class="social-links">
+                <h3>Connect With Me</h3>
+                <br>
+
+                <a href="https://github.com/keerthi91006" target="_blank">GitHub</a>
+
+                <a href="https://www.linkedin.com/in/pasupuleti-jaya-keerthana-ab6925317/" target="_blank">LinkedIn</a>
+
+                <a href="https://www.instagram.com/_keerthana._reddy_/" target="_blank">Instagram</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jaya Keerthana Pasupuleti Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
